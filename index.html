@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Crystal Collector</title>
+  <!-- Reset CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <!-- Latest compiled Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>Crystal Collector</h1></div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 instructions">
+            <h2>Instructions</h2> 
+            <p>At the start of each game we will provide you with a random numeral</p>
+            <p>Notice the four, beautiful crystals below. By clicking on one of these crystals you will add a specific amount of points to your total score.</p>
+            <p>You can win the game by matching your total score to the random numeral. You will lose the game if your total score goes above the random numeral.</p>
+            <p>The value of each crystal is hidden from you but does not change - you must click on them to discover their value.</p>
+          </div>
+        </div>
+
+    <div class="row">
+      <div class="col-sm-9">
+        <h2>Number to match: <span id="scoreToMatch"></span></h2>
+      </div>
+    <div class="col-sm-3">
+        <h3>Wins: <span id="wins"></span></h3>
+        <h3 class="text-left">Losses: <span id="losses"></span></h3>
+      </div>
+    </div>
+
+      <div class="row text-center">
+        <div class="col-sm-3">
+        <img src="assets/images/Crystal.png" class="rounded float-left pink" alt="Crystal" width="200" height="200" />
+        </div>
+        <div class="col-sm-3">
+        <img src="assets/images/Crystal_alliance.png" class="rounded float-left purple" alt="Crystal" width="200" height="200" />
+        </div>
+        <div class="col-sm-3">
+        <img src="assets/images/Icon_Crystal_Black.png" class="rounded float-left black" alt="Crystal" width="200" height="200" />
+        </div>
+        <div class="col-sm-3">
+          <img src="assets/images/Rainbow_crystal_icon.png" class="rounded float-left rainbow" alt="Crystal" width="200" height="200" />
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+      <h2>Your total score is: <span id="totalScore"></span></h2>
+      </div>
+    </div>
+    </div>
+
+
+</body>
+<!-- JS -->
+<script src="assets/javascript/game.js"></script> 
+</html>
